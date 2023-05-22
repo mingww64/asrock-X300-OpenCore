@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>21G526</string>
+	<string>21G531</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -42,15 +42,6 @@
 	<string>1341</string>
 	<key>DTXcodeBuild</key>
 	<string>13F100</string>
-	<key>GPUCompanionBundles</key>
-	<array>
-		<string>AMDShared.bundle</string>
-		<string>AMDRadeonX6000Shared.bundle</string>
-		<string>AMDRadeonX5000GLDriver.bundle</string>
-		<string>AMDRadeonVADriver2.bundle</string>
-		<string>AMDRadeonX5000MTLDriver.bundle</string>
-		<string>AMDRawCounterPlugin.bundle</string>
-	</array>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>AMDGPUWrangler</key>
@@ -181,6 +172,10 @@
 				<dict>
 					<key>CFBundleIdentifier</key>
 					<string>com.apple.kext.AMDRadeonX5000</string>
+					<key>GPUDCCDisplayable</key>
+					<false/>
+					<key>GPUDebugNullClientMask</key>
+					<integer>0</integer>
 					<key>GpuDebugPolicy</key>
 					<integer>0</integer>
 					<key>IOClass</key>
@@ -265,22 +260,19 @@
 					<string>0.0.0.0.0</string>
 					<key>IOVARendererID</key>
 					<integer>16908288</integer>
+					<key>SWIP_properties</key>
+					<dict>
+						<key>EnableGDDR6MemoryTraining</key>
+						<integer>0</integer>
+						<key>EnableSwVCNFWLoading</key>
+						<integer>0</integer>
+						<key>EnableVCNFWLog</key>
+						<integer>0</integer>
+					</dict>
 					<key>cail_properties</key>
 					<dict>
-						<key>CAIL_DisableCailLoadUcode</key>
-						<integer>1</integer>
 						<key>CAIL_DisableGfxCGPowerGating</key>
 						<integer>1</integer>
-						<key>CAIL_DisableJpegEngine</key>
-						<integer>0</integer>
-						<key>CAIL_EnableLBPWSupport</key>
-						<integer>0</integer>
-						<key>CAIL_EnablePeerDataAperture</key>
-						<integer>0</integer>
-						<key>CAIL_EnableSecureMmFwLoading</key>
-						<integer>1</integer>
-						<key>CAIL_EnableXdmaSupport</key>
-						<integer>0</integer>
 					</dict>
 				</dict>
 			</array>
